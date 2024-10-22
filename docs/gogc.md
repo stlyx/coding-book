@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Go GC 策略
 
 <style>

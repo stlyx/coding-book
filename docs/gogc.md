@@ -73,3 +73,6 @@ Go 程序当前支持两种 GC 策略，[官网](https://tip.golang.org/doc/gc-g
 所以在容器场景下最佳实践是设置 GOMEMLIMIT 软限制，但软限制太小会导致频繁 GC，建议是最大堆 +5% ~ +10% 的预留余量，或者容器 memory limit 的 80% ~ 95%。**<font color=red>注意不能等于容器的内存 limit，会导致未 GC 先 OOM。</font>**
 
 另外可以在环境变量中设置 `GODEBUG=gctrace=1` 帮助定位，这样会在 go 程序的**标准错误流**里输出每次 GC 的日志。
+
+<script src="https://tip.golang.org/js/d3.js"></script>
+<script async src="https://tip.golang.org/doc/gc-guide.js"></script>

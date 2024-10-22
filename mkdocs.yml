@@ -27,15 +27,11 @@ theme:
         icon: material/brightness-4
         name: 切换到自动模式
   font:
-    text: Noto Serif SC
+    text: Noto Sans SC
     code: Source Code Pro
   language: zh
-  logo: logo.png
-  favicon: logo.png
   features:
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.path
     - toc.follow
